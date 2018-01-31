@@ -12,7 +12,7 @@ class PubTest < MiniTest::Test
     @drink1 = Drinks.new("Beer", 2.50, 1)
     @drink2 = Drinks.new("Wine", 4.50, 2)
     @drink3 = Drinks.new("Spirits", 3.00, 3)
-    @customer = Customer.new("David", 50.00, 22)
+    @customer = Customer.new("David", 50.00, 22, 0)
   end
 
   def test_pub_has_name
@@ -54,5 +54,9 @@ class PubTest < MiniTest::Test
     result= @pub.is_over_18(@customer)
     assert_equal(true, result)
   end
+
+  # def test_too_drunk
+  #
+  # end
 
 end

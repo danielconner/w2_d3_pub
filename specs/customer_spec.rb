@@ -9,7 +9,7 @@ require_relative('../pub')
 class CustomerTest < MiniTest::Test
 
   def setup
-    @customer = Customer.new("David", 50.00, 22)
+    @customer = Customer.new("David", 50.00, 22, 0)
     @drink = Drinks.new("beer", 2.50, 1)
     @drink2 = Drinks.new("wine", 3.50, 2)
   end
