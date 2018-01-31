@@ -22,6 +22,9 @@ class Pub
   #   return copy
   # end
 
-  
+  def drink_has_been_bought()
+    @drinks.pop()
+  end
+
 
 end

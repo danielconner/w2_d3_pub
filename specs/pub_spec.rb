@@ -32,6 +32,13 @@ class PubTest < MiniTest::Test
     assert_equal(3, @pub.drinks_count)
   end
 
+  def test_stock_decrease
+    @pub.pub_has_drinks(@drink1)
+    @pub.pub_has_drinks(@drink2)
+    @pub.pub_has_drinks(@drink3)
+    @pub.drink_has_been_bought()
+    assert_equal(2, @pub.drinks_count)
+    end
 
 
 end
