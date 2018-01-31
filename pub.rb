@@ -35,4 +35,11 @@ class Pub
     end
   end
 
+  def is_customer_too_drunk(customer)
+    if customer.drunkenness_level >= 5
+      return "refuse service"
+    else
+      return "what drink do you want?"
+    end
+  end
 end

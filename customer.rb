@@ -21,7 +21,13 @@ class Customer
     @drunkenness_level += drink.alcohol_level
   end
 
+  def buys_food(food)
+    @wallet -= food.price
+  end
 
+  def decrease_customer_drunkenness_level(food)
+    @drunkenness_level -= food.rejuvenation_level
+  end
 
 
 

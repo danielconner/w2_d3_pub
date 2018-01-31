@@ -55,8 +55,8 @@ class PubTest < MiniTest::Test
     assert_equal(true, result)
   end
 
-  # def test_too_drunk
-  #
-  # end
+  def test_too_drunk
+    assert_equal("what drink do you want?", @pub.is_customer_too_drunk(@customer))
+  end
 
 end
