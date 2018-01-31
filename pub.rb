@@ -6,7 +6,6 @@ class Pub
     @name = name
     @till = till
     @drinks = []
-
   end
 
   def drinks_count()
@@ -22,9 +21,18 @@ class Pub
   #   return copy
   # end
 
-  def drink_has_been_bought()
+  def drink_has_been_bought
     @drinks.pop()
   end
 
+  def till_increase(drink)
+    @till += drink
+  end
+
+  def is_over_18(customer)
+    if customer.age >= 18
+      return true
+    end
+  end
 
 end
